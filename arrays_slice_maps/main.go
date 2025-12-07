@@ -29,7 +29,7 @@ func main() {
 	clear(Slice)
 
 	// Remake slice with better buffer
-	var pSlice []int = make([]int, 5, 20)
+	var pSlice []int = make([]int, 0, 10)
 	pSlice = append(pSlice, 1,2,3,4,5)
 	fmt.Println("Slice was first at address ", &pSlice[0])
 	pSlice = append(pSlice, 6,7,8,9,10)
